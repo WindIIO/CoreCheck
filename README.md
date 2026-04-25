@@ -1,60 +1,61 @@
-# CoreCheck - Application de Support Informatique
+# CoreCheck - IT Support Application
 
-# Version: 1.0.0
+**Version:** 1.0.0  
+**Date:** April 2026
 
-# Date: Avril 2026
+---
 
 ## Description
 
-CoreCheck est une application de support informatique pour Windows qui permet de diagnostiquer rapidement un PC et d'effectuer certaines actions automatiques.
+CoreCheck is a Windows IT support application that allows you to quickly diagnose a PC and perform certain automatic actions.
 
-## Fonctionnalités
+## Features
 
-- **Informations système** : CPU, RAM, espace disque, nom du PC, OS
-- **Test réseau** : Vérification connexion internet, temps de réponse
-- **Analyse rapide** : Détection des problèmes (disque faible, RAM saturée, CPU élevé)
-- **Actions rapides** : Nettoyer fichiers temporaires, gestionnaire des tâches, paramètres réseau, Flush DNS
-- **Scan des processus** : Liste des processus actifs, tri par CPU, fermer un processus
-- **Journal (logs)** : Historique des actions effectuées
+- **System Information**: CPU, RAM, disk space, PC name, OS
+- **Network Test**: Internet connection check, response time
+- **Quick Analysis**: Problem detection (low disk, saturated RAM, high CPU)
+- **Quick Actions**: Clean temporary files, task manager, network settings, Flush DNS
+- **Process Scan**: List of active processes, sort by CPU, terminate a process
+- **Logs**: History of actions performed
 
 ## Installation
 
-1. Assurez-vous d'avoir Python 3.7+ installé
-2. Installez les dépendances :
+1. Make sure you have Python 3.7+ installed
+2. Install dependencies:
    ```
    pip install psutil
    ```
-3. Lancez l'application :
-   - Double-cliquez sur `launcher.bat`
-   - Ou via Python : `python main.py`
+3. Launch the application:
+   - Double-click `launcher.bat`
+   - Or via Python: `python main.py`
 
-## Création de l'exécutable (optionnel)
+## Building the Executable (Optional)
 
-Pour créer un fichier .exe :
+To create a .exe file:
 
 ```bash
 pip install pyinstaller
 pyinstaller --onefile --windowed --name CoreCheck main.py
 ```
 
-L'exécutable sera dans le dossier `dist/`.
+The executable will be in the `dist/` folder.
 
 ## Interface
 
-L'application dispose d'une interface graphique moderne avec :
+The application features a modern GUI with:
 
-- Section Informations système
-- Section Réseau
-- Section Actions rapides
-- Section Processus
-- Section Logs
-- Mode sombre
-- Mise à jour automatique des stats (toutes les 2 secondes)
+- System Information section
+- Network section
+- Quick Actions section
+- Processes section
+- Logs section
+- Dark mode
+- Auto-updating stats (every 2 seconds)
 
-## Auteurs
+## Author
 
-- Développeur Python Senior
+- Senior Python Developer
 
-## Licence
+## License
 
 MIT
